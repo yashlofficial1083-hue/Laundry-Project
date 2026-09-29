@@ -56,7 +56,11 @@ const startServer = async () => {
     });
 };
 
-startServer().catch((err) => {
-    console.error("❌ Server startup failed:", err.message);
-    process.exit(1);
-});
+if (require.main === module) {
+    startServer().catch((err) => {
+        console.error("❌ Server startup failed:", err.message);
+        process.exit(1);
+    });
+}
+
+module.exports = app;
