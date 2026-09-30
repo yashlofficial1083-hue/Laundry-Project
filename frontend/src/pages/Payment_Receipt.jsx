@@ -6,7 +6,7 @@ import { formatDateForInput } from "../utils/formatDateForInput";
 import { getEmployeeSearch } from "../api/employee";
 import { CiSearch } from "react-icons/ci";
 import NavButton from "../components/ui/NavButton";
-import PageHeader from "../components/pageHeader";
+import PageHeader from "../components/PageHeader";
 
 function Payment_Receipt() {
   const navigate = useNavigate();
