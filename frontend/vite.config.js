@@ -6,6 +6,6 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
    preview: {
-    allowedHosts: ["helpful-essence-production-7106.up.railway.app"],
+    allowedHosts: ["laundry-admin-pannel.up.railway.app"],
   },
 })
